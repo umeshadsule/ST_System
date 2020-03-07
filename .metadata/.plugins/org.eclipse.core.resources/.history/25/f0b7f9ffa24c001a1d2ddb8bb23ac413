@@ -1,0 +1,38 @@
+package com.nt.mul;
+
+public class MulTest  extends Thread{
+	
+	synchronized void thOne(){
+		System.out.println("th1");
+		try {
+			wait();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	synchronized void thTwo() {
+		System.out.println("th2");
+		
+		notify();
+	}
+@Override
+public void run() {
+	
+	MulTest t=new MulTest();
+		t.thOne();
+		t.thTwo();
+	}
+	public static void main(String[] args) {
+		
+		
+		Thread th1=new Thread();
+		
+		
+		Thread th2=new Thread();
+		
+
+	}
+
+}

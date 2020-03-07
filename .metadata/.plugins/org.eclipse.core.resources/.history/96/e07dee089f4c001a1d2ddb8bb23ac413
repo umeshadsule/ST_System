@@ -1,0 +1,29 @@
+package com.nt.mul;
+
+public class Consumer implements Runnable  {
+	Factory fa;
+	
+	Consumer (Factory fa){
+		this.fa=fa;
+		
+		new Thread(this,"consumer").start();
+	}
+	
+	@Override
+	public void run() {
+		System.out.println("inside consume run");
+		int i=1;
+		
+		while(i<=2){
+			System.out.println("inside while consume run");
+			
+			
+			fa.consumer();
+			System.out.println("after method call consumer");
+			i++;
+			
+		}
+		
+	}
+
+}

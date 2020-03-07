@@ -1,0 +1,25 @@
+package com.nt.mul;
+
+public class Producer implements Runnable {
+	Factory fa;
+	
+	Producer (Factory fa){
+		this.fa=fa;
+		
+		new Thread(this,"producer").start();
+		System.out.println("After class produce thread");
+	}
+	
+	@Override
+	public void run() {
+		int i=1;
+		
+		while(i<=10){
+			
+			fa.produce(i++);
+			
+		}
+		
+	}
+
+}

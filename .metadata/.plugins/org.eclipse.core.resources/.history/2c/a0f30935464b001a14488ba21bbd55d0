@@ -1,0 +1,40 @@
+package com.nt.mul;
+
+public class Mul extends Thread {
+	static int n;
+	public Mul(int n) {
+		this.n=n;
+	}
+
+	public Mul() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	synchronized public void run() {
+		
+		for(int i=0 ;i<=n;i++) {
+		try {
+			wait(100);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+			System.out.println(i);
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		
+		Mul m=new Mul(50);
+		Mul m1=new Mul();
+		
+		m.start();
+		m1.start();
+		
+		
+
+	}
+
+}

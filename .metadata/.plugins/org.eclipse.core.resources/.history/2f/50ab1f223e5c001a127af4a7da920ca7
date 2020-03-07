@@ -1,0 +1,9 @@
+package com.nt.thread;
+
+public class ReadedMsg {
+	
+	ReadedMsg(){}
+	
+	
+
+}

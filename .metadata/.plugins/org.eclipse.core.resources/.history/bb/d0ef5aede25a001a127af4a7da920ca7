@@ -1,0 +1,29 @@
+package com.nt.oop;
+
+
+
+class A{
+	
+	protected void m1() {
+		
+		
+		
+	}
+	
+	
+}
+
+public class Test extends A {
+	
+	public void m1() {
+		
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,71 @@
+package com.nt.core.ArrayList;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+class Movie1 {
+	String name;
+	int year;
+	
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public int getYear() {
+		return year;
+	}
+
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+
+	public Movie1(String name, int year) {
+		this.name=name;
+		this.year=year;
+	}
+
+
+	
+	
+	
+}
+
+class SortByName implements Comparator<Movie1>{
+
+	@Override
+	public int compare(Movie1 m, Movie1 m2) {
+		
+		return m.getName().compareTo(m2.getName());
+	}
+	
+	
+}
+
+public class SortArrayListComparator {
+
+	public static void main(String[] args) {
+		ArrayList<Movie> list=new ArrayList<Movie>();
+		list.add(new Movie("star",2015));
+		list.add(new Movie("war",2015));
+		Collections.sort(list);
+		
+		
+		for(Movie m:list) {
+			System.out.println(m.name+"::year::"+m.year);
+		}
+		
+		
+
+	}
+
+}

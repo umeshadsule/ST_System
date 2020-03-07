@@ -1,0 +1,23 @@
+package com.nt.thread;
+
+public class CreatedMsg implements Runnable{
+	Messege msg;
+	
+	CreatedMsg(Messege msg){
+		this.msg=msg;
+		
+		new Thread().run();
+		
+		
+		
+	}
+
+	@Override
+	public void run() {
+		
+		msg.createMsg("java");
+		
+		
+	}
+
+}

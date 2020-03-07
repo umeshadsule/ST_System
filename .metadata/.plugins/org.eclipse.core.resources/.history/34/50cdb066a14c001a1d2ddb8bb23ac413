@@ -1,0 +1,7 @@
+package com.nt.mul;
+
+public class Snippet {
+	How you can print 1 to 100 using 2 thread. but after one thread another thread will run, eg 1to 50  thread 0 and 51 to 100 printed by thread 1?
+	     
+}
+

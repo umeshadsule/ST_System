@@ -1,0 +1,11 @@
+package com.nt.forEach;
+
+public class TestForEach {
+
+	public static void main(String[] args) {
+		//Hashmap methods  ,2.keySet(),3.get(),values()
+		//Entry Methods 1.entrySet(),2.entry.getKey(),3.entry.getValue(),
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.nt.singleton;
+
+public class SingletonTest {
+	
+	private SingletonTest singleInstance;
+	
+	
+	private SingletonTest() {
+		
+		
+	}
+	
+	public SingletonTest getInstace(){
+		
+		
+		if(singleInstance==null)
+			singleInstance =new SingletonTest();
+		
+		return singleInstance;
+		
+		
+		
+		
+	}
+
+}

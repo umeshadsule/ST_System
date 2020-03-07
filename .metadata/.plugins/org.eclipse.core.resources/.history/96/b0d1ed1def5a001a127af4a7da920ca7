@@ -1,0 +1,29 @@
+package com.nt.oop;
+
+
+//you can increase the visibilty but you can not decrease
+class A{
+	
+	private void m1() {
+		
+		
+		
+	}
+	
+	
+}
+
+public class Test extends A {
+	@Override
+	public void m1() {
+		
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

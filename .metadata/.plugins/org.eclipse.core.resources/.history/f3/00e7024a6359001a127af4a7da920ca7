@@ -1,0 +1,19 @@
+package com.nt.core.TreeMap;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Map<String,String> map=new TreeMap<String,String>();
+		map.put("a","A");
+		map.put("d","B");
+		map.put("c","C");
+		map.put("b","D");
+		
+	    System.out.println(map);
+
+	}
+
+}

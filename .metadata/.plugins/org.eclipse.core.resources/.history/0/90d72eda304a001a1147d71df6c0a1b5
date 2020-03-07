@@ -1,0 +1,27 @@
+package com.nt.comparator;
+
+import java.util.Comparator;
+import java.util.TreeSet;
+
+public class A {
+
+	public static void main(String[] args) {
+		TreeSet ts=new TreeSet(new MyComparator());
+		
+		ts.add(10);
+		ts.add(20);
+
+	}
+
+}
+
+class MyComparator implements Comparator{
+
+	@Override
+	public int compare(Object arg0, Object arg1) {
+		
+		return -1;
+	}
+	
+	
+}

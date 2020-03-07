@@ -1,0 +1,34 @@
+package com.nt.comparable;
+
+import java.util.TreeSet;
+
+public class A {
+
+	public static void main(String[] args) {
+		TreeSet ts=new TreeSet();
+		
+		
+  ts.add(new Student(10,111));
+  ts.add(new Student(111,120));
+	}
+
+}
+
+
+class Student implements  Comparable{
+	int balance;
+	int accno;
+	
+	
+
+	public Student(int balance, int accno) {
+		super();
+		this.balance = balance;
+		this.accno = accno;
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		
+		return 0;
+	}}

@@ -1,0 +1,17 @@
+package com.nt.core.Treeet;
+
+import java.util.TreeSet;
+
+public class TreeSetTest {
+
+	public static void main(String[] args) {
+		TreeSet<String> ts =new TreeSet<String>();
+		ts.add("a");
+		ts.add("C");
+		ts.add("B");
+		ts.add("4");
+		System.out.println(ts);
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.nt.hashset;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.function.Consumer;
+
+public class HAshSet {
+	
+	public static void main(String[] args) {
+		Set<String>set=new HashSet<String>();
+		set.add("umesh");
+		set.add("Akash");
+		set.add("Shri");
+		
+		set.forEach((k)->System.out.println(k));
+	}
+	
+
+}

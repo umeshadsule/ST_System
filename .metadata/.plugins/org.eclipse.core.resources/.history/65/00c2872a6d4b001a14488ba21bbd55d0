@@ -1,0 +1,52 @@
+package com.nt.mul;
+
+
+
+
+class Factory {
+	int items;
+
+	boolean itemsInFactory;
+
+	synchronized void produce(int items) {
+       System.out.println("inside produce");
+		if(itemsInFactory) {
+
+			try {
+				wait();
+			}
+			catch(InterruptedException ie) {
+				ie.printStackTrace();
+			}
+
+		}
+		
+        this.items=items;
+		itemsInFactory=true;
+
+		System.out.println("Produced items:"+items);
+
+		notify();
+	}
+
+	synchronized int consumer() {
+		if(! itemsInFactory) {
+			try {
+
+				wait();
+			}catch(InterruptedException ie) {
+				ie.printStackTrace();
+			}
+
+		}
+
+		System.out.println("items Consumed"+items);
+		itemsInFactory=false;
+
+		notifyAll();
+
+		return items;
+	}
+
+}
+

@@ -1,0 +1,40 @@
+package com.nt.comparator;
+
+import java.util.Comparator;
+
+class Employee implements Comparator{
+	
+	String name;
+	int eid;
+	
+
+	public Employee(String name, int eid) {
+		
+		this.name = name;
+		this.eid = eid;
+	}
+	
+	public String toString() {
+		return "NAme"+name;
+	}
+
+
+	@Override
+	public int compare(Object arg0, Object arg1) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+}
+
+
+
+public class DemoCompator {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

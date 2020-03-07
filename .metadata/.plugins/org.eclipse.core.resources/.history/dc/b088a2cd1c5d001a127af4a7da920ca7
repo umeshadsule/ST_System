@@ -1,0 +1,20 @@
+package com.nt.hashcode;
+
+public class Test {
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Object obj=new Object();
+		Object obj2=new Object();
+		obj.hashCode();
+		System.out.println(obj.hashCode());
+		System.out.println(obj2.hashCode());
+
+
+	}
+
+}

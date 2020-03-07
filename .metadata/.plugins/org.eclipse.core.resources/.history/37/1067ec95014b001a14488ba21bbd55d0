@@ -1,0 +1,10 @@
+package RemoveIntValueFromList;
+
+public class RemoveInt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

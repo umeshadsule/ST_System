@@ -1,0 +1,54 @@
+package com.nt.thread;
+
+public class Messege {
+	String msg;
+	boolean isMsg;
+	
+	synchronized void createMsg(String msg){
+		
+		System.out.println("method cr msg");
+		
+		if(isMsg) {
+			
+			try {
+				wait();
+				
+				
+			}catch(InterruptedException ie) {
+				
+				
+			}
+			
+			System.out.println("msg");
+			isMsg=true;
+			notify();
+		}
+		
+		
+		
+		
+	}
+	
+	
+	
+	synchronized String readMSg() {
+		
+		if(!isMsg) {
+			try {
+				
+				wait();
+			}catch(InterruptedException ie) {
+				
+			}
+		}
+		
+		System.out.println("msg readed"+msg);
+		isMsg=true;
+		
+		return msg+"->Readed";
+	}
+	
+	
+	
+
+}

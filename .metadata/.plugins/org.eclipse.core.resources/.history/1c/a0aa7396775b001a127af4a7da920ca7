@@ -1,0 +1,31 @@
+package com.nt.immu;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ImmutableArrayList {
+	final private List<String> list1;
+	
+	ImmutableArrayList(List list){
+		this.list1=list;
+		
+	}
+	
+
+	public static void main(String[] args) {
+		List<String> list=new ArrayList<String>("");
+		list.add("java");
+		list.add("Spring");
+		
+
+	}
+
+}
+
+ class Example {
+    final private ArrayList<String> list;
+
+    Example(ArrayList<String> listArg) {
+        list = Collections.unmodifiableList(listArg);
+    }
+}

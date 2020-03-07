@@ -1,0 +1,27 @@
+package com.nt.mul;
+
+public class Mul extends Thread {
+	static int i;
+	@Override
+	synchronized public void run() {
+		
+		for( ;i<=100;i++) {
+		
+			System.out.println(i);
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		
+		Mul m=new Mul();
+		Mul m1=new Mul();
+		
+		m.start();
+		m1.start();
+		
+		
+
+	}
+
+}

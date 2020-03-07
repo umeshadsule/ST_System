@@ -1,0 +1,30 @@
+package com.nt.exception;
+
+import javax.management.IntrospectionException;
+
+public class Test {
+	
+	
+/*	try {
+		int a;int b;
+	int c=b+a;
+	}catch(Exception e) {}
+	*/
+	public static void main(String[] args) {
+		
+		//for checked exception.
+		/*try {
+			throw new InterruptedException();
+		}
+		catch(InterruptedException ie) {}
+		finally {}
+	
+		*/
+		
+		
+		
+		
+	}
+
+}
+

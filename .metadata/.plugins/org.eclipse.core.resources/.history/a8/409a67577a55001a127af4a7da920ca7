@@ -1,0 +1,16 @@
+package com.nt.reverse;
+
+public class ReverseStringTest {
+
+	public static void main(String[] args) {
+		System.out.println();
+		String s="core java";
+		 char[] ch=s.toCharArray();
+		
+		for(int i=ch.length-1;i>=ch.length;i--) {
+		s.charAt(i);
+		}
+
+	}
+
+}

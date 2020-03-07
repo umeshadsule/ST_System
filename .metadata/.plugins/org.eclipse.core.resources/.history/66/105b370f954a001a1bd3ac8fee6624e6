@@ -1,0 +1,46 @@
+package com.nt.comparator;
+
+import java.util.TreeSet;
+
+public class B {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
+
+
+class Employee implements Comparable{
+	String name;
+	int eid;
+	Employee( String name, int eid) {
+		this. name=name;
+		this. eid=eid;
+		} 
+	public String toString( ){
+		return name+" " +eid;
+		}
+	public int compareTo( Object obj ){
+		int eid1=this. eid;
+		Employee e= ( Employee) obj ; 
+		int eid2= e. eid;
+		if ( eid1<eid2) 
+			return 1;
+		else if ( eid1>eid2)
+			return 1;
+		else return 0;
+		} 
+}
+
+Employee e1=new Employee( " Nag" , 100) ;
+Employee e2=new Employee( " Bal a" , 200) ;
+Employee e3= new Employee( " Chi r u" , 50) ;
+Employee e4 =new Employee( " Venki " , 150) ; 
+Employee e5=new Employee( " Nag" , 100) ;
+TreeSet t=new TreeSet ( ) ;
+t . add( e1) ;
+t . add( e2) ; t . add( e3) ; t . add( e4) ; t . add( e5) ; Sy st em. out . pr i nt l n( t ) ; Tr eeSet t 1=newTr eeSet ( newMy Compar at or ( ) ) ; t 1. add( e1) ; t 1. add( e2) ; t 1. add( e3) ; t 1. add( e4) ; t 1. add( e5) ; Sy st em. out . pr i nt l n( t 1) ;
+}
+}

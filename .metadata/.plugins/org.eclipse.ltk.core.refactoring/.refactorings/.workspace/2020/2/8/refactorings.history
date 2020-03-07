@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;HashSet_Iterate&apos; to &apos;CollectionHashSet_Iterate&apos;&#x0D;&#x0A;- Original element: &apos;HashSet_Iterate&apos;&#x0D;&#x0A;- Renamed element: &apos;HashSet_Iterate&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;HashSet_Iterate&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=HashSet_Iterate" name="CollectionHashSet_Iterate" references="true" stamp="1582375558868" version="1.0"/>
+</session>

@@ -1,0 +1,13 @@
+package com.nt.java;
+
+public class Test {
+
+	public static void main(String[] args) {
+		String s="core java";
+		String s1="";
+		s1.split(s);
+		System.out.println(s1);
+
+	}
+
+}

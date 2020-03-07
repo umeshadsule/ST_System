@@ -1,0 +1,22 @@
+package com.nt.forEach;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class TestForEach {
+
+	public static void main(String[] args) {
+		//Hashmap methods  ,2.keySet(),3.get(),values()
+		//Entry Methods 1.entrySet(),2.entry.getKey(),3.entry.getValue()
+		
+		Map<String,String> map=new HashMap<>();
+		map.put("a","A");
+		
+		for(Map.Entry<String,String> entry:map.entrySet()) {
+			
+			System.out.println("key"+entry.getKey()+"/Values"+entry.getValue());
+		}
+		
+	}
+
+}

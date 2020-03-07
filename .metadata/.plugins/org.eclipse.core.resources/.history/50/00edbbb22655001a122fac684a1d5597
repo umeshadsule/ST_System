@@ -1,0 +1,25 @@
+package com.nt.collection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class CollectionCopyMAp {
+
+	public static void main(String[] args) {
+		Map<String,String> map=new HashMap<String,String>();
+		map.put("java", "Umesh");
+		map.put("Akash", "Surendra");
+		
+		Map<String,String> map1=new HashMap<String,String>();
+		map1.putAll(map);
+		
+		
+		for(Map.Entry<String,String> entry:map1.entrySet()){
+			
+			System.out.println(entry.getKey());
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.nt.exception;
+
+public class Test {
+	
+	
+	try {
+		int a;int b;
+	int c=b+a;
+	}catch(Exception e) {}
+	
+	public static void main(String[] args) {
+		
+		try {
+			
+		}
+		catch(ArithmeticException a) {}
+		finally {}
+		//catch(NullPointerException n) {}
+		
+		
+		
+		
+	}
+
+}
+}

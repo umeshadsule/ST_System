@@ -1,0 +1,48 @@
+package com.nt.forEach;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class TestForEach {
+
+	public static void main(String[] args) {
+		//Hashmap methods  ,2.keySet(),3.get(),values()
+		//Entry Methods 1.entrySet(),2.entry.getKey(),3.entry.getValue()
+		
+		Map<String,String> map=new HashMap<>();
+		map.put("a","A");
+		
+		/*for(Map.Entry<String,String> entry:map.entrySet()) {
+			
+			System.out.println("key:"+entry.getKey()+":Values:"+entry.getValue());
+		}*/
+		//************************************************************8
+		
+		System.out.println("Using ForEach()");
+		 map.forEach((k,v)->System.out.println("key:"+k+":Value:"+v));
+		
+	//*********************************************************	
+		System.out.println("Using map.keySet()  and map.get(key)");
+		  for (String name : map.keySet())  
+	        { 
+	            // search  for value 
+	            String url = map.get(name); 
+	            System.out.println("Key = " + name + ", Value = " + url); 
+	        } 
+		
+		//************************************************************
+	//	Using Iterator
+		Iterator<Map.Entry<String, String>> itr = map.entrySet().iterator(); 
+         
+	        while(itr.hasNext()) 
+	        { 
+	             Map.Entry<String, String> entry = itr.next(); 
+	             System.out.println("Key = " + entry.getKey() +  
+	                                 ", Value = " + entry.getValue()); 
+	        } 
+		
+		
+	}
+
+}

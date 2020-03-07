@@ -1,0 +1,22 @@
+package com.nt.exception;
+
+public class Test {
+	int a;
+	int b;
+	int c=b+a;
+	
+	public static void main(String[] args) {
+		
+		try {
+			
+		}
+		catch(ArithmeticException a) {}
+		finally {}
+		//catch(NullPointerException n) {}
+		
+		
+		
+		
+	}
+
+}

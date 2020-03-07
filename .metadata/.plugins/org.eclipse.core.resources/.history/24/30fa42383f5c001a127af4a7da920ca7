@@ -1,0 +1,20 @@
+package com.nt.thread;
+
+public class ReadedMsg {
+	Messege msg;
+	
+	ReadedMsg(Messege msg){
+		 this.msg=msg;
+		 
+		 new Thread().run();
+		
+	}
+	
+	void run() {
+		
+		msg.readMSg();
+	}
+	
+	
+
+}
